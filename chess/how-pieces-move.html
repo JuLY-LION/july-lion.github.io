@@ -6,6 +6,10 @@ body {
 	color: white;
 	text-shadow: 2px 2px 2px black;
 }
+body > table > tbody > tr > td {
+	vertical-align: top;
+	color: yellow;
+}
 </style></head><body>
 
 <h1>Title</h1>
@@ -14,18 +18,20 @@ body {
 	<tr>
 		<td>
 			<h2>Pawn</h2>
-			<p>The pawn may move 1 square forward toward the enemy without capturing, or move either diagonal direction toward the enemy if capturing. If it hasn't moved yet, it may move 2 squares forward without capturing.</p>
-			<img src="pawn.png">
-			<p><b>Special:</b> The pawn promotes to any other piece (excluding a king) when it reaches the end of the board. Also En Passant</p>
-		</td>
-		<td>
+			<p>The pawn may move 1 square forward toward the enemy without capturing, or move either diagonal direction toward the enemy if capturing. If it hasn't moved yet, it may move 2 squares forward without capturing. Extra text extra text extra text extra text extra text.</p>
+		</td><td>
 			<h2>Rook</h2>
 			<p>The rook moves any number of squares vertically or horizontally, capturing the first piece it moves into.</p>
+		</td>
+	</tr><tr>
+		<td>
+			<img src="pawn.png">
+			<p><b>Special:</b> The pawn promotes to any other piece (excluding a king) when it reaches the end of the board. Also En Passant</p>
+		</td><td>
 			<img src="rook.png">
 			<p><b>Special:</b> The rook may castle with the king.</p>
 		</td>
-	</tr>
-	<tr>
+	</tr><tr>
 		<td>
 			<h2>Bishop</h2>
 			<p>The bishop may move any number of squares in any diagonal direction, capturing the first piece it moves into.</p>

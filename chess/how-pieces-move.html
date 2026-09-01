@@ -1,24 +1,32 @@
 <html><head>
 <title>How Chess Pieces Move</title>
 <style>
+
 body {
-	background-image: url("https://images.chesscomfiles.com/chess-themes/backgrounds/originals/large/blues.jpg");
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), 
+		url("https://images.chesscomfiles.com/chess-themes/backgrounds/originals/large/blues.jpg");
 	color: white;
 	text-shadow: 2px 2px 2px black;
+	font-size: 150%;
 }
 body > table > tbody > tr > td {
 	vertical-align: top;
-	color: yellow;
+	width: 500px;
+	font-size: 150%;
+	padding: 10px;
 }
+h2 { margin-top: 15px; }
+
 </style></head><body>
 
-<h1>Title</h1>
+<h1>How Chess Pieces Move</h1>
 
 <table>
 	<tr>
 		<td>
 			<h2>Pawn</h2>
-			<p>The pawn may move 1 square forward toward the enemy without capturing, or move either diagonal direction toward the enemy if capturing. If it hasn't moved yet, it may move 2 squares forward without capturing. Extra text extra text extra text extra text extra text.</p>
+			<p>The pawn may move 1 square forward toward the enemy without capturing, or move either diagonal direction toward the enemy if capturing. If it hasn't moved yet, it may move 2 squares forward without capturing.</p>
 		</td><td>
 			<h2>Rook</h2>
 			<p>The rook moves any number of squares vertically or horizontally, capturing the first piece it moves into.</p>
@@ -35,35 +43,39 @@ body > table > tbody > tr > td {
 		<td>
 			<h2>Bishop</h2>
 			<p>The bishop may move any number of squares in any diagonal direction, capturing the first piece it moves into.</p>
-			<img src="bishop.png">
-			<p><b>Special:</b> While it can't pass through pieces, it can squeeze between them to reach it's desired destination.</p>
 		</td>
 		<td>
 			<h2>Knight</h2>
 			<p>The knight moves 2 squares vertically or horizontally, and then 1 additional square at a right angle - which movement resembles an "L" shape - capturing any piece at it's destination.</p>
-			<img src="knight.png">
-			<p><b>Special:</b> The knight jumps over any enemy or friendly piece on the way to it's desination.</p>
 		</td>
-	</tr>
-	<tr>
+	</tr><tr>
+		<td>
+			<img src="bishop.png">
+			<p><b>Special:</b> While it can't pass through pieces, it can squeeze between them to reach it's desired destination.</p>
+		</td>
+		<td>
+			<img src="knight.png">
+			<p><b>Special:</b> The knight jumps over any enemy or friendly piece in the way to it's desination.</p>
+		</td>
+	</tr><tr>
 		<td>
 			<h2>Queen</h2>
 			<p>The queen may move any number of squares vertically, horizontally, or diagonally, capturing the first piece it moves into.</p>
+		</td>
+		<td>
+			<h2>King</h2>
+			<p>The king moves only 1 square vertically, horizontally, or diagonally, capturing any piece at it's destination. The king may not move to a square that is under attack by an enemy piece.</p>
+		</td>
+	</tr><tr>
+		<td>
 			<img src="queen.png">
 			<p><b>Special:</b> The queen has the combined movement of a rook and bishop, making it the most powerful piece on the board.</p>
 		</td>
 		<td>
-			<h2>King</h2>
-			<p>The king moves only 1 square vertically or vertically, horizontally, or diagonally, capturing any piece at it's destination.</p>
 			<img src="king.png">
-			<p><b>Special:</b> If the king which hasn't moved yet, it may castle with either rook assuming that rook hasn't moved either. Castling moves the king 2 squares toward that rook (never 3 squares) and the rook to the other side of the king.</p>
+			<p><b>Special:</b> The king may castle with either rook.</p>
 		</td>
 	</tr>
-	<tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
 </table>
 
 </body></html>

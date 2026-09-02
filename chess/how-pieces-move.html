@@ -8,16 +8,16 @@ body {
 		url("https://images.chesscomfiles.com/chess-themes/backgrounds/originals/large/blues.jpg");
 	color: white;
 	text-shadow: 2px 2px 2px black;
-	font-size: 150%;
+	font-size: 175%;
 }
 body > table > tbody > tr > td {
 	vertical-align: top;
 	width: 480px;
-	font-size: 150%;
+	font-size: 175%;
 	padding: 10px;
 }
 h2 { margin-top: 15px; }
-.image480 { width: 480px }
+.image480 { width: 480px; }
 
 </style></head><body>
 
@@ -35,7 +35,7 @@ h2 { margin-top: 15px; }
 	</tr><tr>
 		<td>
 			<img src="pawn.png" class="image480">
-			<p><b>Special:</b> The pawn promotes to another piece when it reaches the end of the board. Also En Passant.</p>
+			<p><b>Special:</b> The pawn promotes when it reaches the end of the board. Also En Passant.</p>
 		</td><td>
 			<img src="rook.png" class="image480">
 			<p><b>Special:</b> The rook may castle with the king.</p>
@@ -79,14 +79,24 @@ h2 { margin-top: 15px; }
 	</tr>
 </table>
 
-# Special Moves
+<h1>Special Moves</h1>
+
 <ul>
-	<li><b>Castling:</b> Once per game, you may move your king 2 squares horizontally and a rook to the otherside of the king. This is dependent on the fact that both pieces haven't moved yet, and you are not castling into, out of, or through check.</li>
+	<li><b>Castling:</b> Once per game, you may move your king 2 squares horizontally (never 3 squares) and a rook to the otherside of the king. This is dependent on the fact that both pieces haven't moved yet, and you are not castling into, out of, or through check.</li>
 	<li><b>Promotion:</b> The pawn promotes to any other piece (excluding a king) if it reaches the end of the board.</li>
-	<li><b>En Passant:</b> If a pawn performs a double step move option that passes over a square being threatened by an opposing pawn, that opposing pawn may capture by moving to that skipped square, and the passed pawn is removed from play like any other capture. This must be performed on the move immediately after the douple step move, and can only involve pawns.</li>
-	<li></li>
-	<li></li>
-	<li></li>
+	<li><b>En Passant:</b> If a pawn performs a double step move option that passes over a square being threatened by an opposing pawn, that opposing pawn may capture by moving to that skipped square, and the passed pawn is removed from play like any other capture. This must be performed on the move immediately after the douple step move, and can only involve pawns. [<a href="https://en.wikipedia.org/wiki/En_passant#/media/File:Ajedrez_captura_al_paso_del_peon.png" target="blank">Example</a>]</li>
+</ul>
+
+<h1>Keep In Mind</h1>
+
+<ul>
+	<li>With the exception of the pawn, every piece moves and captures the same way.</li>
+	<li>With the exception of the pawn, all pieces can move backwards.</li>
+	<li>The knight is the only piece which can jump over other pieces.</li>
+	<li>Castling is the only way to move more than 1 piece on your turn.</li>
+	<li>It is disallowed to perform any move that puts your own king in check.</li>
+	<li>You may not capture your own pieces, even if it would be beneficial.</li>
+	<li>While the rules state you are unrestricted on your choice of promotion, physical limitations may only allow 1 queen active on the board per player. Ask your opponent before starting a match if you both accept this limitation, or if you wish to use other game pieces to represent additional queens should the opportunity arise.</li>
 </ul>
 
 </body></html>

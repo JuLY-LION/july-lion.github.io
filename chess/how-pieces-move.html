@@ -4,7 +4,7 @@
 
 body {
 	background-image:
-		linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), 
+		linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
 		url("https://images.chesscomfiles.com/chess-themes/backgrounds/originals/large/blues.jpg");
 	color: white;
 	text-shadow: 2px 2px 2px black;
@@ -12,11 +12,12 @@ body {
 }
 body > table > tbody > tr > td {
 	vertical-align: top;
-	width: 500px;
+	width: 480px;
 	font-size: 150%;
 	padding: 10px;
 }
 h2 { margin-top: 15px; }
+.image480 { width: 480px }
 
 </style></head><body>
 
@@ -33,10 +34,10 @@ h2 { margin-top: 15px; }
 		</td>
 	</tr><tr>
 		<td>
-			<img src="pawn.png">
-			<p><b>Special:</b> The pawn promotes to any other piece (excluding a king) when it reaches the end of the board. Also En Passant</p>
+			<img src="pawn.png" class="image480">
+			<p><b>Special:</b> The pawn promotes to another piece when it reaches the end of the board. Also En Passant.</p>
 		</td><td>
-			<img src="rook.png">
+			<img src="rook.png" class="image480">
 			<p><b>Special:</b> The rook may castle with the king.</p>
 		</td>
 	</tr><tr>
@@ -50,11 +51,11 @@ h2 { margin-top: 15px; }
 		</td>
 	</tr><tr>
 		<td>
-			<img src="bishop.png">
+			<img src="bishop.png" class="image480">
 			<p><b>Special:</b> While it can't pass through pieces, it can squeeze between them to reach it's desired destination.</p>
 		</td>
 		<td>
-			<img src="knight.png">
+			<img src="knight.png" class="image480">
 			<p><b>Special:</b> The knight jumps over any enemy or friendly piece in the way to it's desination.</p>
 		</td>
 	</tr><tr>
@@ -68,14 +69,24 @@ h2 { margin-top: 15px; }
 		</td>
 	</tr><tr>
 		<td>
-			<img src="queen.png">
+			<img src="queen.png" class="image480">
 			<p><b>Special:</b> The queen has the combined movement of a rook and bishop, making it the most powerful piece on the board.</p>
 		</td>
 		<td>
-			<img src="king.png">
+			<img src="king.png" class="image480">
 			<p><b>Special:</b> The king may castle with either rook.</p>
 		</td>
 	</tr>
 </table>
+
+# Special Moves
+<ul>
+	<li><b>Castling:</b> Once per game, you may move your king 2 squares horizontally and a rook to the otherside of the king. This is dependent on the fact that both pieces haven't moved yet, and you are not castling into, out of, or through check.</li>
+	<li><b>Promotion:</b> The pawn promotes to any other piece (excluding a king) if it reaches the end of the board.</li>
+	<li><b>En Passant:</b> If a pawn performs a double step move option that passes over a square being threatened by an opposing pawn, that opposing pawn may capture by moving to that skipped square, and the passed pawn is removed from play like any other capture. This must be performed on the move immediately after the douple step move, and can only involve pawns.</li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
 
 </body></html>
